@@ -182,6 +182,30 @@ const FooterV2 = (props) => {
                             padding-top: 22px;
                             padding-bottom: 22px;
                         }
+                        @media(max-width: 1023px) {
+                            .cms-container .section_banner-part-2 .mgz-row > .mgz-column,
+                            .cms-container .section_banner-part-3 .mgz-row > .mgz-column {
+                                width: 100% !important;
+                                flex-basis: 100% !important;
+                            }
+                            .cms-container .section_banner-part-2 .mgz-row > .mgz-column:last-child,
+                            .cms-container .section_banner-part-3 .mgz-row > .mgz-column:first-child {
+                                flex-direction: row;
+                            }
+                            .cms-container .section_banner-part-2 .mgz-row > .mgz-column:last-child .banner-small,
+                            .cms-container .section_banner-part-3 .mgz-row > .mgz-column:first-child .banner-small {
+                                width: 50%;
+                                flex-basis: 50%;
+                            }
+                            .cms-container .section_banner-part-2 .mgz-row > .mgz-column:last-child .banner-small .image-container,
+                            .cms-container .section_banner-part-3 .mgz-row > .mgz-column:first-child .banner-small .image-container {
+                                width: 100% !important;
+                            }
+                            .cms-container .section_banner-part-2 .mgz-row > .mgz-column:last-child .banner-small .image-container img,
+                            .cms-container .section_banner-part-3 .mgz-row > .mgz-column:first-child .banner-small .image-container img {
+                                width: 100% !important;
+                            }
+                        }
                         .cms-container .section_product-slider .section_row-title > .mgz-element-inner {
                             position: relative;
                             margin-bottom: 10px;
@@ -194,6 +218,17 @@ const FooterV2 = (props) => {
                             left: 10px;
                             bottom: 0;
                             border-bottom: 1px solid #EBECEE;
+                        }
+                        .cms-container .section_product-slider .mgz-text .prose {
+                            padding-right: 5px;
+                        }
+                        .cms-container .section_product-slider .mgz-text .prose a:after {
+                            content: '';
+                            height: 10px;
+                            width: 10px;
+                            border-right: 2px solid #242424;
+                            border-bottom: 2px solid #242424;
+                            transform: rotate(-45deg);
                         }
                     `}
                 </style>
