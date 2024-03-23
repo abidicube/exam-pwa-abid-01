@@ -459,11 +459,12 @@ const ProductItem = (props) => {
                                     <Button
                                         iconOnly
                                         icon={<HeartIcon />}
-                                        iconProps={{ className: feed ? '!w-4 !h-4 text-neutral-white' : '!w-4 !h-4 group-hover:text-neutral-white' }}
+                                        iconProps={{ className: feed ? '!w-4 !h-4 text-neutral-500' : '!w-4 !h-4 group-hover:text-neutral-black' }}
                                         variant={feed ? 'primary' : 'outlined'}
                                         onClick={() => handleFeed(props)}
                                         className={classNames(
-                                            'swift-action-towishlist !p-[10px] !border-neutral-200 hover:bg-primary group',
+                                            '!bg-[rgba(255,255,255,0.8)]',
+                                            'swift-action-towishlist !p-[10px] !border-neutral-100 hover:!bg-neutral-white group',
                                             'hover:!shadow-none focus:!shadow-none hover:!opacity-100',
                                         )}
                                     />
@@ -472,11 +473,12 @@ const ProductItem = (props) => {
                                     <Button
                                         iconOnly
                                         icon={<TrashIcon />}
-                                        iconProps={{ className: '!w-4 !h-4 group-hover:text-neutral-white text-primary' }}
+                                        iconProps={{ className: '!w-4 !h-4 text-neutral-500 group-hover:text-neutral-black text-primary' }}
                                         variant="outlined"
                                         onClick={() => handlingRemove()}
                                         className={classNames(
-                                            'swift-action-toremove !p-[10px] !border-neutral-200 hover:bg-primary group',
+                                            '!bg-[rgba(255,255,255,0.8)]',
+                                            'swift-action-towishlist !p-[10px] !border-neutral-100 hover:!bg-neutral-white group',
                                             'hover:!shadow-none focus:!shadow-none hover:!opacity-100',
                                         )}
                                     />
@@ -485,11 +487,12 @@ const ProductItem = (props) => {
                                     <Button
                                         iconOnly
                                         icon={<CompareIcon />}
-                                        iconProps={{ className: '!w-4 !h-4 group-hover:text-neutral-white' }}
+                                        iconProps={{ className: '!w-4 !h-4 text-neutral-500  group-hover:text-neutral-black' }}
                                         variant="outlined"
                                         onClick={() => handleSetCompareList(props?.id)}
                                         className={classNames(
-                                            'swift-action-tocompare !p-[10px] !border-neutral-200 hover:bg-primary group',
+                                            '!bg-[rgba(255,255,255,0.8)]',
+                                            'swift-action-towishlist !p-[10px] !border-neutral-100 hover:!bg-neutral-white group',
                                             'hover:!shadow-none focus:!shadow-none hover:!opacity-100',
                                         )}
                                     />
